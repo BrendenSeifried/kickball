@@ -24,8 +24,6 @@ export default function TeamList() {
         <div key={data.id}>
           <Link to={`/teams/${data.id}`}>
             <h2>{data.name}</h2>
-            {/* <h3>City: {data.city}, {data.state}</h3>
-            <h3>Team: {data.name}</h3> */}
           </Link>
         </div>
         

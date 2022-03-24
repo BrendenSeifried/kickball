@@ -6,3 +6,6 @@ export async function fetchTeams() {
   return data.data;
 }
   
+export async function fetchTeamPlayers(id) {
+  return client.from('teams').select(`*, players (*)`).match({ playerID: id }).single();
+}

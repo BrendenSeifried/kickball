@@ -16,3 +16,5 @@ export async function fetchTeamById(id) {
   console.log(dataId);
   return dataId.data;
 }
+
+//How will I render the information for players to the teamsDetails page, hint . notation 

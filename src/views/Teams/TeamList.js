@@ -20,13 +20,13 @@ export default function TeamList() {
   return (
     <div>Landing
       
-      {/* {team.map((data) => ( 
+      {team.map((data) => ( 
         <div key={data.id}>
 
           <h1>{data.name}</h1>
         </div>
         
-      ))}   */}
+      ))}  
     </div>
   );
 }

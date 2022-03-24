@@ -7,5 +7,5 @@ export async function fetchTeams() {
 }
   
 export async function fetchTeamPlayers(id) {
-  return client.from('teams').select(`*, players (*)`).match({ playerID: id }).single();
+  return client.from('teams').select(`*, players (*)`).match({ id }).single();
 }

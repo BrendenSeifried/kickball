@@ -8,9 +8,9 @@ export default function Header() {
         <h1>Teams</h1>
       </NavLink>
 
-      {/* <NavLink>
+      <NavLink exact to = '/players'>
         <h1>Players</h1>
-      </NavLink> */}
+      </NavLink>
     </div>
   );
 }

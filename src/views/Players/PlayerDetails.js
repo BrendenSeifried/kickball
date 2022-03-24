@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 export default function PlayerDetails() {
   const params = useParams();
   const id = params.id;
-  console.log(params);
   const [playerInfo, setPlayerInfo] = useState(null);
 
   useEffect(() => {

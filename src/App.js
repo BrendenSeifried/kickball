@@ -29,8 +29,8 @@ function App() {
 
           </Route>
 
-          <Route>
-            <PlayerDetails exact path = '/players/:id'/>
+          <Route exact path = '/players/:id'>
+            <PlayerDetails />
           </Route>
         </Switch>
       </div>

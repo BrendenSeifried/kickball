@@ -8,6 +8,7 @@ export default function ListOfPlayers() {
   useEffect(()=>{
     const fetchData = async () => {
       const data = await fetchPlayers();
+      console.log(data);
       setPlayer(data);
     };
     fetchData();

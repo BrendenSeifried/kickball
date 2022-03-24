@@ -18,7 +18,7 @@ export default function TeamDetails() {
     fetchTeamInfo();
   }, [id]);
 
-  if (!teamInfo) return <div>...Loading</div>;
+  if (!teamInfo) return <h1>...Finding Teams</h1>;
 
   return (
     <div>

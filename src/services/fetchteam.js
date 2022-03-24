@@ -14,5 +14,5 @@ export async function fetchTeamById(id) {
   
   const dataId = await client.from('teams').select(`*`).match({ id }).single();
   console.log(dataId);
-  return dataId;
+  return dataId.data;
 }

@@ -1,6 +1,5 @@
 
 import React, { useEffect, useState } from 'react';
-// import Team from '../../components/team/Team';
 import { fetchTeamById } from '../../services/fetchteam';
 import { useParams } from 'react-router-dom';
 
@@ -8,7 +7,7 @@ import { useParams } from 'react-router-dom';
 export default function TeamDetails() {
   const params = useParams();
   const id = params.id;
-  const [teamInfo, setTeamInfo] = useState([]);
+  const [teamInfo, setTeamInfo] = useState({});
 
 
   useEffect(() => {

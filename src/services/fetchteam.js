@@ -2,6 +2,7 @@
 import { client } from './client';
 
 export async function fetchTeams() {
-  return client.from('teams').select();
+  const data = await client.from('teams').select('*');
+  return data.data;
 }
   

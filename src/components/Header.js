@@ -5,7 +5,7 @@ import './Header.css';
 export default function Header() {
   return (
     <div className='header'>
-      
+
       <NavLink className='links' exact to = '/'>
         <h1>Home</h1>
       </NavLink>
@@ -22,3 +22,4 @@ export default function Header() {
     </div>
   );
 }
+//testing for CI

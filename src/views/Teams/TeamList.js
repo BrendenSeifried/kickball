@@ -10,7 +10,6 @@ export default function TeamList() {
   useEffect(() => {
     const fetchStuff = async () => {
       const stuff = await fetchTeams();
-      console.log(stuff);
       setTeam(stuff);
     };
     fetchStuff();
@@ -23,7 +22,7 @@ export default function TeamList() {
       <h1>Listed Teams:</h1>
       {team.map((data) => ( 
         <div key={data.id}>
-          <Link to={`/fetchteam/${data.id}`}>
+          <Link to={`/teams/${data.id}`}>
             <h2>{data.name}</h2>
             {/* <h3>City: {data.city}, {data.state}</h3>
             <h3>Team: {data.name}</h3> */}

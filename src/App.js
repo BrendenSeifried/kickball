@@ -18,12 +18,9 @@ function App() {
             <TeamList />
           </Route>
 
-          {/* <Route exact path = '/teams/:id'>
+          <Route exact path = '/teams/:id'>
             <TeamDetails />
-            /////////////////////////////
-          This is where I left off Work on TeamDetails.js and set the function up to go by id the Fetch Should be working though
-          //////////////////////////////////////
-          </Route> */}
+          </Route>
         </Switch>
       </div>
     </BrowserRouter>

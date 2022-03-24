@@ -34,7 +34,8 @@ export default function TeamDetails() {
         {/* <p>{teamPlayers.players.name}</p> */}
 
         {teamInfo.players.map((players)=>(
-          <p key={players.id}>{players.name}</p>
+          <p key={players.id}>{players.name}
+          Playing as {players.position} </p>
         ))}
         
       </div>

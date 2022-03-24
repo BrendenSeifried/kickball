@@ -4,6 +4,7 @@ import TeamList from './views/Teams/TeamList';
 import Header from './components/Header';
 import TeamDetails from './views/Teams/TeamDetails';
 import PlayerList from './views/Players/PlayerList';
+import PlayerDetails from './views/Players/PlayerDetails';
 import './App.css';
 
 function App() {
@@ -26,6 +27,10 @@ function App() {
           <Route exact path = '/players'>
             <PlayerList/>
 
+          </Route>
+
+          <Route>
+            <PlayerDetails exact path = '/players/:id'/>
           </Route>
         </Switch>
       </div>

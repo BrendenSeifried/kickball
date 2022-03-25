@@ -1,6 +1,6 @@
 import React from 'react';
 import './Landing.css';
-import globo from './globo.png';
+import globo from './globo.jpg';
 
 export default function LandingPage() {
   return (

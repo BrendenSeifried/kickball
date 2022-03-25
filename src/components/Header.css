@@ -2,12 +2,11 @@
     display: flex;
     flex:wrap;
     flex-direction: row;
-    background-color: brown;
+    background-color: rgb(143, 37, 37);
     justify-content: center;
 }
 
 .links{
     padding: 20px;
-    border: 2px solid black;
 }
 

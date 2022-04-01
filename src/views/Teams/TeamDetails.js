@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { fetchTeamPlayers } from '../../services/fetchteam';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 
 export default function TeamDetails() {
@@ -29,10 +29,12 @@ export default function TeamDetails() {
         <h2>{teamInfo.name}</h2>
         <h3>City: {teamInfo.city}, {teamInfo.state}</h3>
         <h3>Team: {teamInfo.name}</h3>
-
+       
         {teamInfo.players.map((players)=>(
-          <p key={players.id}>{players.name}
+          <Link key={players.id} to={`/players/${players.id}`}>
+            <p>{players.name}
           Playing as {players.position} </p>
+          </Link>
         ))}
         
       </div>
